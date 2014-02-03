@@ -34,4 +34,8 @@ TemplateBootstrap::Application.configure do
 
   # Expands the lines which load the assets
   config.assets.debug = true
+
+  # To sort out issue of drop downs working across localhost and heroku
+  config.serve_static_assets = false
+
 end
